@@ -3,6 +3,9 @@
   --border-color:#ffffff24;
   --light-dark: #1a1a1a;
 }
+a:-webkit-any-link {
+  color: unset;
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -83,6 +86,7 @@ span.s-nav.active {
   background: #0a0a0a;
   padding: 24px;
   border-radius: 6px;
+  position: relative;
 }
 .bottom {
   min-height: 4rem;
@@ -93,4 +97,31 @@ span.s-nav.active {
 .s-p-b:hover{
   background: var(--light-dark);
   cursor:pointer;
+}
+span.redirect {
+  position: absolute;
+  background: #fff;
+  right: 0;
+  top: 0;
+  transform: translate(25%,-25%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .15s ease;
+  transition-property: opacity,transform;
+}
+.s-p-b:hover span.redirect {
+  opacity:  1;
+  transform: translate(25%,-35%);
+
+}
+.url, .bottom {
+  font-size: 15px;
+}
+.url {
+  padding-top: 3px;
 }
