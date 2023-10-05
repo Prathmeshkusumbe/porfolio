@@ -1,0 +1,27 @@
+.d-flex {
+  display: flex;
+}
+.j-c-f-e {
+  justify-content: end;
+}
+.col-50{
+  width: 50%;
+}
+.v-a-m{
+  vertical-align: middle;
+}
+.a-i-c{
+  align-items: center;
+}
+.a-i-f-e{
+  align-items: flex-end;
+}
+.col-30{
+  width: 30%;
+}
+.g-20{
+  gap:20px;
+}
+.f-w-w{
+  flex-wrap: wrap;
+}
